@@ -1,0 +1,162 @@
+.strategies {
+  padding: 2.2rem 0rem 3.4rem 0;
+  min-height: calc(100vh - 102px - 182px);
+  background: #f7f7fa;
+  border-radius: 0 0 100px 100px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.title {
+  max-width: 580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+
+.subTitle {
+  color: #989898;
+}
+
+.title > * + * {
+  margin-left: 18px;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 11px;
+}
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+}
+
+.green {
+  background: #54b598;
+  animation: pulse 1500ms infinite;
+}
+
+.yellow {
+  background: #f9b93d;
+}
+
+.statusLabel {
+  font-family: ProximaNova, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #46474b;
+}
+
+.descText {
+  color: #666666;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.aboutTitle {
+  margin-bottom: 15px;
+}
+
+.desc {
+  max-width: 580px;
+}
+
+.chart {
+  margin-top: 80px;
+}
+
+.chartWrapper {
+  height: 170px;
+}
+
+.learnMore {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  color: #46474b;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.learnMore circle,
+.learnMore path {
+  stroke: #6072d8;
+}
+
+.flowchart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 38px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #54b598;
+  }
+  100% {
+    box-shadow: 0 0 0 6px #54b59801;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .risk {
+    width: 100%;
+  }
+  .header {
+    row-gap: 20px;
+  }
+  .title {
+    row-gap: 20px;
+  }
+  .title img {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,104 @@
+:root {
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  src: url("/fonts/ProximaNovaRegular.ttf");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  src: url("/fonts/ProximaNovaSemibold.ttf");
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  src: url("/fonts/ProximaNovaBold.ttf");
+}
+@font-face {
+  font-family: "ClashDisplay";
+  font-weight: 500;
+  src: url("/fonts/ClashDisplayMedium.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "ProximaNova";
+  overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea,
+select {
+  transition: 0.2s linear;
+  font-size: 1.6rem;
+  font-family: "ProximaNova", sans-serif;
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+input::placeholder {
+  color: #989898;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+.hide {
+  transition: 0.2s linear;
+}
+
+.blur .hide {
+  filter: blur(5px);
+  user-select: none;
+}

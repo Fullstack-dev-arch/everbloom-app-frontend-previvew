@@ -1,0 +1,40 @@
+.modal__provider_item {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.modal__provider_item_button {
+  padding: 1.6rem 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 700;
+  background: #fff;
+  color: #46474b !important;
+  border-radius: 50px;
+  border: solid 1px transparent;
+  width: 100%;
+  transition: 0.2s linear;
+}
+
+.modal__provider_item_button_active {
+  border: solid 1px #4056d1;
+}
+
+.modal__provider_item_button_info {
+  flex-shrink: 0;
+}
+
+.modal__provider_item_button_info path,
+.modal__provider_item_button_info circle {
+  stroke: #6072d8;
+}
+
+@media (max-width: 700px) {
+  .modal__provider_item {
+    width: 100%;
+  }
+}

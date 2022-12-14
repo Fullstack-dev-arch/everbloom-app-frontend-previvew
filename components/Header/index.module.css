@@ -1,0 +1,148 @@
+.header {
+  padding: 3rem 0;
+  background: #f7f7fa;
+}
+
+.header__inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  margin-right: 7.3rem;
+  flex-shrink: 0;
+}
+
+.header__wrapper,
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav_wrap {
+  margin-right: 4.8rem;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.header__nav_link_active {
+  font-weight: 700;
+}
+
+.header__nav_wrap:last-child {
+  margin-right: 0;
+}
+
+.header__profile_wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__profile_wrap_mobile {
+  display: none;
+}
+
+.header__profile_hide {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(197, 197, 214, 0.3);
+}
+
+.header__menu_button {
+  display: flex;
+}
+
+.header__nav_wrap:hover .header__nav_drop {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.header__nav_drop {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  width: 170px;
+  padding: 0rem 0.7rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s linear;
+}
+
+.header__nav_drop:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -20px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  pointer-events: none;
+}
+
+.header__nav_drop_link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #dcdcdc;
+  gap: 12px;
+}
+
+.header__nav_drop_link:last-child {
+  border-bottom: none;
+}
+
+.header__nav_drop_link:hover {
+  background: rgba(96, 114, 216, 0.1);
+}
+
+@media (max-width: 998px) {
+  .header__logo {
+    margin-right: 3rem;
+    width: 130px;
+  }
+
+  .header__nav_wrap {
+    margin-right: 2rem;
+  }
+
+  .header__profile_wrap {
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav,
+  .header__profile_wrap {
+    display: none;
+  }
+
+  .header__profile_wrap_mobile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header {
+    padding: 1rem 0;
+  }
+}

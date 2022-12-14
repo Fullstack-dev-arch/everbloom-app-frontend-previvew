@@ -1,0 +1,47 @@
+.modal__network_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 3.2rem;
+  border-radius: 50px;
+  background: #fff;
+}
+
+.modal__network_item_box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 700;
+}
+
+.connected {
+  line-height: 143%;
+  color: #46474b;
+  padding-right: 2.8rem;
+  position: relative;
+}
+
+.connected:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #54b598;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .modal__network_item_box {
+    gap: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .modal__network_item {
+    padding: 1.2rem 2rem;
+  }
+}

@@ -1,0 +1,191 @@
+/* Modal */
+.modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 101;
+}
+
+.modal__inner {
+  width: 100%;
+  max-width: 1011px;
+  min-height: calc(100% - 3.5rem);
+  margin: 1.75rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__content {
+  width: 100%;
+  background: #f7f7fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 4rem 5rem;
+  position: relative;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal__currency_title_inner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modal__currency_subtitle {
+  color: #989898;
+}
+
+.modal__currency_text {
+  margin-top: 4rem;
+}
+
+.modal__currency_subtext {
+  margin-top: 1.3rem;
+  color: #666;
+  line-height: 150%;
+}
+
+.modal__currency_content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.modal__currency_content_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.modal__currency_content_wrapper:first-child {
+  max-width: 561px;
+}
+
+.modal__currency_content_wrapper:last-child {
+  max-width: 256px;
+}
+
+.modal__currency_over_chart_inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.main__welcome_block_wrap,
+.main__balance_inner_wrap,
+.main__chart_first_wrap,
+.main__chart_second_wrap {
+  width: 100%;
+  max-width: 781px;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(-150deg, #fff, #eee, #62a8c6);
+  display: flex;
+}
+
+.main__balance_inner_wrap {
+  max-width: 680px;
+  border-radius: 16px;
+}
+
+.main__balance_inner {
+  width: 100%;
+  border-radius: 15px;
+  background: #fff;
+  display: flex;
+}
+
+.main__balance_item {
+  width: 50%;
+  border-right: 1px solid #63c2cf;
+  padding: 2rem 4.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.main__balance_value {
+  color: #6072d8;
+}
+
+.main__balance_item:last-child {
+  border-right: none;
+}
+
+.learn__more {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  color: #46474b;
+  gap: 8px;
+}
+
+.learn__more circle,
+.learn__more path {
+  stroke: #6072d8;
+}
+
+.stra__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stra__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chart__wrap {
+  width: 100%;
+  height: 230px;
+}
+
+@media (max-width: 998px) {
+  .modal__currency_content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .modal__currency_content_wrapper:last-child,
+  .modal__currency_content_wrapper:first-child {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .modal__inner {
+    max-width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .modal__content {
+    padding: 5rem 2rem;
+  }
+}
+@media (max-width: 480px) {
+}

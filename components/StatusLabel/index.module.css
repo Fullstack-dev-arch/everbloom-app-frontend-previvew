@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container > * + * {
+  margin-left: 10px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 18px;
+  padding: 0 16px;
+  color: white;
+  background: #6072d8;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 0;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
+.label:active {
+  outline: none;
+  border: none;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-left: 12px;
+}
+
+.green {
+  background: #54b598;
+  animation: pulse 1500ms infinite;
+}
+
+.yellow {
+  background: #f9b93d;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #54b598;
+  }
+  100% {
+    box-shadow: 0 0 0 6px #54b59801;
+  }
+}

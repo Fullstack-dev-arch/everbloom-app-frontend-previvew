@@ -1,0 +1,129 @@
+.container {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 290px;
+  z-index: 100;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid white;
+  margin-left: 70%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(197, 197, 214, 0.15);
+  border-radius: 12px;
+}
+
+.block {
+  width: 100%;
+  padding: 19px 21px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block > * + * {
+  margin-top: 16px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 9px;
+}
+
+.email {
+  width: 208px;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.address {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+}
+
+.connection {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #989898;
+  gap: 7px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.green {
+  background: #54b598;
+}
+
+.red {
+  background: #ab1111;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  max-height: 1px;
+  background: #989898;
+}
+
+.buttonWrapper {
+  width: 135px;
+  flex-grow: 1;
+}
+
+.buttonLogout {
+  flex-grow: 1;
+  text-align: center;
+  font-family: ProximaNova, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #292928;
+  text-decoration-line: underline;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.buttonLogout:hover {
+  color: #4056d1;
+}

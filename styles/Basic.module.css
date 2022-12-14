@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.h1 {
+  font-family: "ClashDisplay", sans-serif;
+  font-size: 3rem;
+}
+
+.h2 {
+  font-size: 3rem;
+}
+
+.h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.body1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.button1 {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.button2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.values {
+  font-size: 2rem;
+}
+
+.caption {
+  font-size: 1.4rem;
+}
+
+.tooltip {
+  font-size: 1.4rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 978px;
+  }
+}
+@media (max-width: 998px) {
+  .container {
+    max-width: 748px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 460px;
+  }
+
+  .h1,
+  .h2 {
+    font-size: 2.4rem;
+  }
+
+  .h3,
+  .values {
+    font-size: 1.8rem;
+  }
+
+  .body1 {
+    font-size: 14px;
+  }
+
+  .body2,
+  .button1 {
+    font-size: 1.4rem;
+  }
+
+  .button2 {
+    font-size: 1.6rem;
+  }
+
+  .caption {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .h1,
+  .h2 {
+    font-size: 1.7rem;
+  }
+  .container {
+    max-width: 95%;
+  }
+}

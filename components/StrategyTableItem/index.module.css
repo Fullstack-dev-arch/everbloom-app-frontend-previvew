@@ -1,0 +1,125 @@
+.active {
+  color: #54b598;
+}
+
+.inactive {
+  color: #ab1111;
+}
+
+.strategies__table_item_link {
+  text-decoration: underline;
+}
+
+.strategies__table_item_link:hover {
+  font-weight: 700;
+}
+
+.strategies__table_item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 3fr;
+  padding: 1.3rem 2.5rem;
+}
+
+.strategies__table_item_risk {
+  padding-left: 1.6rem;
+  position: relative;
+}
+
+.strategies__table_item_risk:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.strategies__table_item_risk.low:before {
+  background: #54b598;
+}
+
+.strategies__table_item_risk.medium:before {
+  background: #f9b93d;
+}
+
+.strategies__table_item_risk.high:before {
+  background: #ab1111;
+}
+
+.strategies__asset {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.strategies__asset_text {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.strategies__asset_currency {
+  width: 100%;
+  max-width: 75px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.strategies__asset_currency_icon {
+  position: relative;
+}
+
+.strategies__asset_currency_icon:nth-child(2) {
+  left: -7px;
+}
+
+.strategies__asset_currency_icon:nth-child(3) {
+  left: -14px;
+}
+
+.strategies__asset_currency_icon:nth-child(4) {
+  left: -21px;
+}
+
+@media (max-width: 998px) {
+  .strategies__table_item {
+    padding: 1.2rem 1rem;
+  }
+
+  .strategies__asset_text {
+    max-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .strategies__table_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #989898;
+  }
+
+  .strategies__table_item p,
+  .strategies__table_item a {
+    width: 47%;
+  }
+
+  .strategies__table_item div {
+    width: 100%;
+  }
+
+  .strategies__table_item .strategies__asset_text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .strategies__table_item:last-child {
+    border-bottom: none;
+  }
+}

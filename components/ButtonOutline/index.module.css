@@ -1,0 +1,58 @@
+.button__outline {
+  display: flex;
+  align-items: center;
+}
+
+.button__outline_icon,
+.button__outline_icon_fill {
+  margin-right: 0.5rem;
+}
+
+.button__outline_icon path,
+.button__outline_icon circle,
+.button__outline_icon_fill path,
+.button__outline_icon_fill circle {
+  transition: 0.2s linear;
+}
+
+.button__outline:hover {
+  color: #6072d8;
+}
+
+.button__outline:active {
+  color: #4056d1;
+}
+
+.button__outline.disable {
+  color: #989898;
+}
+
+.button__outline:hover .button__outline_icon path,
+.button__outline:hover .button__outline_icon circle {
+  stroke: #6072d8;
+}
+
+.button__outline:active .button__outline_icon path,
+.button__outline:active .button__outline_icon circle {
+  stroke: #4056d1;
+}
+
+.disable .button__outline_icon path,
+.disable .button__outline_icon circle {
+  stroke: #989898;
+}
+
+.button__outline:hover .button__outline_icon_fill path,
+.button__outline:hover .button__outline_icon_fill circle {
+  fill: #6072d8;
+}
+
+.button__outline:active .button__outline_icon_fill path,
+.button__outline:active .button__outline_icon_fill circle {
+  fill: #4056d1;
+}
+
+.disable .button__outline_icon_fill path,
+.disable .button__outline_icon_fill circle {
+  fill: #989898;
+}

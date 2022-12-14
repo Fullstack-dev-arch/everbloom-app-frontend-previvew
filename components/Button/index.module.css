@@ -1,0 +1,45 @@
+.button1 {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 1.1rem 2.4rem;
+  background: #292928;
+  border-radius: 50px;
+  max-height: 54px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: none;
+  border: 1px solid #292928;
+  gap: 8px;
+}
+
+.button:hover {
+  background: #6072d8;
+  border: 1px solid #6072d8;
+}
+
+.button:active {
+  background: #4056d1;
+  border: 1px solid #4056d1;
+}
+
+.button.disable {
+  background: #989898;
+  border: 1px solid #989898;
+  pointer-events: none;
+}
+
+.disable {
+  stroke: #989898;
+}
+
+@media (max-width: 768px) {
+  .button1 {
+    font-size: 1.4rem;
+  }
+}
