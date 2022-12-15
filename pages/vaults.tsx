@@ -24,6 +24,12 @@ const options = {
   dataLabels: {
     enabled: false,
   },
+  stroke: {
+    curve: "smooth" as 'smooth' | 'straight' | 'stepline' | 'smooth' | 'straight' | 'stepline',
+    show: true,
+    width: 2,
+    colors: ['transparent']
+  },
 };
 
 const Vaults: NextPage = () => {
