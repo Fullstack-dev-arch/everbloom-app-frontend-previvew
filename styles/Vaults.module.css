@@ -263,6 +263,16 @@
 .vaults__chart2_wrap {
   width: 100%;
   max-width: 350px;
+  position: relative;
+}
+
+.valuts__chart2_percent {
+  position: absolute;
+  right: -10px;
+  top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .stra__item_name {

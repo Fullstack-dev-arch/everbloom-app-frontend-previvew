@@ -70,20 +70,21 @@
 
 .frax3Crv:before,
 .frax3Crv:after {
-  border-color: #9075ff;
+  border-color: #4056d1;
 }
 
 .frax3Crv:after {
-  background: #9075ff;
+  background: #4056d1;
 }
 
 .gmxDeltaNeutral:before,
 .gmxDeltaNeutral:after {
-  border-color: #4056d1;
+  border-color: #9075ff;
+  
 }
 
 .gmxDeltaNeutral:after {
-  background: #4056d1;
+  background: #9075ff;
 }
 
 .stra__item_name {

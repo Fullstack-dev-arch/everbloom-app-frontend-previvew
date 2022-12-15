@@ -20,9 +20,53 @@ const series = [43, 22, 35];
 
 const options = {
   labels: ["BTC / Maker", "BTC / Frax 3crv", "BTC / GMX Delta Neutral"],
-  colors: ["#32b5c7", "#9075ff", "#4056d1"],
+  colors: ["#32b5c7", "#4056d1", "#9075ff"],
   dataLabels: {
     enabled: false,
+  },
+  legend: {
+    show: true,
+    showForSingleSeries: false,
+    showForNullSeries: true,
+    showForZeroSeries: true,
+    position: 'right' as "right" | "top" | "bottom" | "left",
+    horizontalAlign: 'center' as "right" | "left" | "center" | undefined, 
+    floating: false,
+    fontSize: '12px',
+    fontFamily: 'Helvetica, Arial',
+    fontWeight: 400,
+    formatter: undefined,
+    inverseOrder: false,
+    tooltipHoverFormatter: undefined,
+    customLegendItems: [],
+    offsetX: 0,
+    offsetY: -2,
+    labels: {
+        colors: undefined,
+        useSeriesColors: false
+    },
+    markers: {
+        width: 12,
+        height: 12,
+        strokeWidth: 0,
+        strokeColor: '#fff',
+        fillColors: undefined,
+        radius: 12,
+        customHTML: undefined,
+        onClick: undefined,
+        offsetX: 0,
+        offsetY: 0
+    },
+    itemMargin: {
+        horizontal: 5,
+        vertical: 5
+    },
+    onItemClick: {
+        toggleDataSeries: true
+    },
+    onItemHover: {
+        highlightDataSeries: true
+    },
   },
   stroke: {
     curve: "smooth" as 'smooth' | 'straight' | 'stepline' | 'smooth' | 'straight' | 'stepline',
@@ -47,17 +91,22 @@ const Vaults: NextPage = () => {
         const indexes = graphIndexes.slice();
         indexes.push(index);
         setGraphIndexes(indexes);
+        console.log('Indexes => ', indexes);
       }
     } else {
       if (graphIndexes.includes(index)) {
         const indexes = graphIndexes.filter((value) => {
           return value != index;
         });
+        console.log('Indexes => ', indexes);
         setGraphIndexes(indexes);
       }
     }
   };
 
+  let percentages = series.map((item) => {
+    return <div>{item}%</div>
+  });
   return (
     <section className={styles.vaults}>
       <div className={basic.container}>
@@ -254,6 +303,9 @@ const Vaults: NextPage = () => {
 
                 <div className={styles.vaults__chart2_wrap}>
                   <ApexCharts options={options} series={series} type="donut" />
+                  <div className={styles.valuts__chart2_percent}>
+                    {percentages}
+                </div>
                 </div>
               </div>
             </div>
