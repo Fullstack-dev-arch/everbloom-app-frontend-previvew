@@ -72,6 +72,17 @@
 .main__chart_wrapper {
   width: 100%;
   margin-top: 3rem;
+  position: relative;
+}
+
+.main__chart_percent {
+  position: absolute;
+  right: -20px;
+  top: 27px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
 }
 
 .main__welcome_block {

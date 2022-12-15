@@ -101,6 +101,10 @@ const Home: NextPage = () => {
 
   const [isSignInModalOpen, setIsSignInModalOpen] = useState(false);
 
+  let percentages = series.map((item, id) => {
+    return <div key={id}>{item}%</div>
+  });
+
   return (
     <section className={styles.main}>
       <div className={basic.container}>
@@ -161,6 +165,9 @@ const Home: NextPage = () => {
                         series={series}
                         type="donut"
                       />
+                      <div className={styles.main__chart_percent}>
+                        {percentages}
+                      </div>
                     </div>
                   </div>
                 </div>
