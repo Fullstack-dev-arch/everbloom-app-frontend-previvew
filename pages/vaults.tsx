@@ -104,8 +104,8 @@ const Vaults: NextPage = () => {
     }
   };
 
-  let percentages = series.map((item) => {
-    return <div>{item}%</div>
+  let percentages = series.map((item, id) => {
+    return <div key={id}>{item}%</div>
   });
   return (
     <section className={styles.vaults}>
